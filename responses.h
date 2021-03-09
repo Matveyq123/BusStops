@@ -7,17 +7,17 @@ using namespace std;
 struct BusesForStopResponse {
 	vector<string> buses;
 };
-ostream& operator << (ostream& os, const BusesForStopResponse& r);
+ostream& operator << (ostream& os, const BusesForStopResponse& r); //overloaded output operator for structure BusesForStopResponse
 
 struct StopsForBusResponse {
     string bus;
     vector<pair<string, vector<string>>> stops_for_buses;
 };
 
-ostream& operator << (ostream& os, const StopsForBusResponse& r);
+ostream& operator << (ostream& os, const StopsForBusResponse& r); //overloaded output operator for structure StopsForBusResponse
 
 struct AllBusesResponse {
     map<string, vector<string>> buses_to_stops;
 };
 
-ostream& operator << (ostream& os, const AllBusesResponse& r);
+ostream& operator << (ostream& os, const AllBusesResponse& r); //overloaded output operator for structure AllBusesResponse
