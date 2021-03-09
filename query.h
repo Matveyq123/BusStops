@@ -16,4 +16,4 @@ struct Query {
 	string stop;
 	vector<string> stops;
 };
-istream& operator >> (istream& is, Query& q);
+istream& operator >> (istream& is, Query& q); //overloaded input operator for struct Query 
